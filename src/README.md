@@ -8,14 +8,14 @@ bgImageDark: https://theme-hope-assets.vuejs.press/bg/6-dark.svg
 bgImageStyle:
   background-attachment: fixed
 heroText: lingxh的学习笔记
-tagline: 你可以在这里放置或是整个项目的描述。
+tagline: 这里记录这lingxh的学习点点滴滴
 actions:
   - text: 开始阅读
     link: ./
     type: primary
 
   - text: Github
-    link: ./
+    link: https://github.com/lingxh/note
 
 highlights:
   - header: test1
