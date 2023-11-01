@@ -11,7 +11,7 @@ heroText: lingxh的学习笔记
 tagline: 这里记录这lingxh的学习点点滴滴
 actions:
   - text: 开始阅读
-    link: ./guide/
+    link: ./note/
     type: primary
 
   - text: Github
