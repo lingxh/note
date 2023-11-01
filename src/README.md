@@ -1,7 +1,7 @@
 ---
 home: true
 icon: home
-title: HOME
+title: 首页
 heroImage: /logo.svg
 bgImage: https://theme-hope-assets.vuejs.press/bg/6-light.svg
 bgImageDark: https://theme-hope-assets.vuejs.press/bg/6-dark.svg
@@ -11,7 +11,7 @@ heroText: lingxh的学习笔记
 tagline: 这里记录这lingxh的学习点点滴滴
 actions:
   - text: 开始阅读
-    link: ./
+    link: ./guide/
     type: primary
 
   - text: Github

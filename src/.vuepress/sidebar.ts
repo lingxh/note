@@ -17,4 +17,6 @@ export default sidebar({
     //   children: "structure",
     // },
   ],
+  "/note/": "structure",
+
 });

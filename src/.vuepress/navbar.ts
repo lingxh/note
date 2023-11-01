@@ -12,12 +12,12 @@ export default navbar([
         icon: "lightbulb",
         link: "Routing-and-switching"
       },
-      {
-        text: "Foo",
-        icon: "lightbulb",
-        prefix: "foo/",
-        children: ["ray", { text: "...", icon: "ellipsis", link: "" }],
-      },
+      //{
+      //  text: "Foo",
+      //  icon: "lightbulb",
+      //  prefix: "foo/",
+      //  children: ["ray", { text: "...", icon: "ellipsis", link: "" }],
+      //},
     ],
   },
   // {
