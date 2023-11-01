@@ -7,7 +7,7 @@ export default hopeTheme({
 
   author: {
     name: "lingxh",
-    url: "https://mister-hope.com",
+    url: "https://github.com/lingxh",
   },
 
   iconAssets: "fontawesome-with-brands",

@@ -1,3 +1,8 @@
+---
+title: RIP配置
+order: 2
+---
+
 # RIP配置
 
 ### 创建或进入RIP进程
