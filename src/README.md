@@ -29,6 +29,6 @@ highlights:
 
 
 copyright: false
-footer: Code licensed under MIT | Content is licensed under CC BY-SA 4.0 | © 2023 lingxh
+footer: CC BY-SA 4.0 License | © 2023 lingxh
 ---
 

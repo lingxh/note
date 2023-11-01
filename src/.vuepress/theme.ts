@@ -24,7 +24,7 @@ export default hopeTheme({
   // sidebar
   sidebar,
 
-  footer: "Code licensed under MIT | Content is licensed under CC BY-SA 4.0",
+  footer: "CC BY-SA 4.0 License",
 
   displayFooter: true,
 
