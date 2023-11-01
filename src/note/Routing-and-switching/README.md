@@ -5,4 +5,4 @@ index: false
 dir:
   -order: 1
 ---
-<AutoCatalog base='/note' />
+<AutoCatalog base='/note' hideHeading=true />

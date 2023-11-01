@@ -5,4 +5,4 @@ index: false
 dir:
   -order: 1
 ---
-<AutoCatalog />
+<AutoCatalog  base='/note/Routing-and-switching/huawei' hideHeading=true  />
