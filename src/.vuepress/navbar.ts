@@ -5,10 +5,10 @@ export default navbar([
   {
     text: "目录",
     icon: "list",
-    prefix: "/guide/",
+    prefix: "/node/",
     children: [
       {
-        text: "Bar",
+        text: "路由交换",
         icon: "lightbulb",
         prefix: "bar/",
         children: ["baz", { text: "...", icon: "ellipsis", link: "" }],
