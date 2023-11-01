@@ -14,7 +14,7 @@ export default hopeTheme({
 
   logo: "/logo.svg",
 
-  repo: "/",
+  repo: "lingxh/node",
 
   docsDir: "src",
 
