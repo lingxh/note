@@ -39,7 +39,7 @@ LSA年龄 (LSA Age)
 ### LSA类型
 IETF为IPv4 定义了以下几种可用的LSA类型。
 -  ==Router-LSA (Type1)== ，以下简称LSA1，每个设备都会产生，描述了设备的链 路状态和开销，仅在所属的区域内泛洪。
--  ==Network-LSA (Type2)== ，以下简称LSA2，由DR(Designated Router)产生，描 述MA网络的链路状态，仅在所属的区域内泛洪。（P2P网络类型的链路上没有）
+-  ==Network-LSA (Type2)== ，以下简称LSA2，由DR(Designated Router)产生，描述MA网络的链路状态，仅在所属的区域内泛洪。（P2P网络类型的链路上没有）
 -  ==Network-Summary-LSA (Type3)== ，以下简称LSA3，区域内某个网段的路由， 由ABR产生LSA3 向其他区域通告。LSA3在区域间传递路由，但该LSA3 洪范围仅在一个区域内。
 -  ==ASBR-Summary-LSA (Type4)== ，以下简称LSA4，由ABR产生，描述到ASBR 的距离，通告给除ASBR 所在区域的其他相关区域，该LSA4的泛洪范围仅在 一个区域。ABR会在区域边界为其他区域再产生LSA4并继续泛洪。
 -  ==AS-external-LSA (Type5)== ，以下简称LSA5，由ASBR产生，描述到AS外部 的路由，可泛洪到所有的区域（除了STUB区域和NSSA区域）。

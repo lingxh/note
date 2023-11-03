@@ -1,11 +1,11 @@
 # 前端新颖技术
 
 ### vue
-快速简单实现响应式js开发
+快速简单实现响应式js开发  
 Link：[cn.vuejs.org](https://cn.vuejs.org/)
 
-####vue router
-根据url动态响应内容
+#### vue router
+根据url动态响应内容  
 Link：[router.vuejs.org](https://router.vuejs.org/)
 
 #### 创建一个vue应用
