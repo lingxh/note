@@ -1,3 +1,6 @@
 // you can change colors here
+@font-face {font-family: "COURIER PRIME CODE";src:url(/font/code.ttf);}
 $theme-color: #096dd9;
-$font-family: "Noto Sans SC', sans-serif;
+$font-family: '"Noto Sans SC"';
+$font-family-heading: '"Noto Sans SC"';
+$font-family-mono: '"COURIER PRIME CODE", "Noto Sans SC"';
