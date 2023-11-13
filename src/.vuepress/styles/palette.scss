@@ -1,5 +1,6 @@
 // you can change colors here
 @font-face {font-family: "Cascadia";src:url(/font/Cascadia.ttf);}
+::selection {background-color: cyan;}
 $theme-color: #096dd9;
 $font-family: '"Noto Sans SC"';
 $font-family-heading: '"Noto Sans SC"';
