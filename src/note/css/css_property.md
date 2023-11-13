@@ -1,5 +1,64 @@
 # css常用属性
 
+## display
+用于设置元素的显示方式，有以下几种：
+- `block`：块级元素，元素会被显示为块级元素，此时`width`、`height`、`margin`、`padding`属性都可以生效
+- `inline`：行内元素，元素会被显示为行内元素，此时`width`、`height`、`margin`、`padding`属性都不可以生效
+- `inline-block`：行内块级元素，元素会被显示为行内元素，但是其内容会作为块级元素呈现，此时`width`、`height`、`margin`、`padding`属性都可以生效
+- `none`：元素会被隐藏，此时`width`、`height`、`margin`、`padding`属性都不可以生效
+
+用法：<code>display: [block|inline|inline-block|none];</code>
+
+## display:flex
+用于设置元素的弹性盒子布局，有以下几种：
+- `flex-direction`：设置元素的主轴方向
+- `flex-wrap`：设置元素的换行方式
+- `flex-flow`：设置元素的主轴方向和换行方式
+- `justify-content`：设置元素在主轴上的对齐方式
+- `align-items`：设置元素在交叉轴上的对齐方式
+- `align-content`：设置多根轴线的对齐方式
+
+### `flex-direction`
+- `row`：默认值，主轴为水平方向，起点在左端
+- `row-reverse`：主轴为水平方向，起点在右端
+- `column`：主轴为垂直方向，起点在上沿
+- `column-reverse`：主轴为垂直方向，起点在下沿
+
+### `flex-wrap`
+- `nowrap`：默认值，不换行
+- `wrap`：换行，第一行在上方
+- `wrap-reverse`：换行，第一行在下方
+
+### `justify-content`
+- `flex-start`：默认值，左对齐
+- `flex-end`：右对齐
+- `center`：居中
+- `space-between`：两端对齐，项目之间的间隔都相等
+- `space-around`：每个项目两侧的间隔相等，所以，项目之间的间隔比项目与边框的间隔大一倍
+
+### `align-items`
+- `flex-start`：交叉轴的起点对齐
+- `flex-end`：交叉轴的终点对齐
+- `center`：交叉轴的中点对齐
+- `baseline`：项目的第一行文字的基线对齐
+- `stretch`：默认值，如果项目未设置高度或设为auto，将占满整个容器的高度
+
+### `align-content`
+- `flex-start`：与交叉轴的起点对齐
+- `flex-end`：与交叉轴的终点对齐
+- `center`：与交叉轴的中点对齐
+- `space-between`：与交叉轴两端对齐，轴线之间的间隔平均分布
+- `space-around`：每根轴线两侧的间隔都相等，所以，轴线之间的间隔比轴线与边框的间隔大一倍
+- `stretch`：默认值，轴线占满整个交叉轴
+
+## flex
+用于设置元素的弹性盒子布局，有以下几种：
+- `flex-grow`：设置元素的放大比例
+- `flex-shrink`：设置元素的缩小比例
+- `flex-basis`：设置元素的基准值
+
+组合元素用法：<code>flex: [grow] [shrink] [basis];</code>
+
 ## z-index
 用于设置元素的堆叠顺序，数值越大，越靠上面。  
 用法：<code>z-index: [int];</code>
@@ -118,4 +177,40 @@
 - `fixed`：当页面的其余部分滚动时，背景图像不会移动
 - `local`：背景图像会随着元素内容的滚动而移动
 
+## font
+用于设置元素的字体，有以下几种：
+- `font-style`：设置元素的字体样式
+- `font-variant`：设置元素的字体变体
+- `font-weight`：设置元素的字体粗细
+- `font-size`：设置元素的字体大小
+- `line-height`：设置元素的行高
+- `font-family`：设置元素的字体系列
 
+组合元素用法：<code>font: [style] [variant] [weight] [size/line-height] [family];</code>
+
+### `font-style`
+- `normal`：默认值，浏览器显示一个标准的字体样式
+- `italic`：浏览器会显示一个斜体的字体样式
+- `oblique`：浏览器会显示一个倾斜的字体样式
+
+### `font-variant`
+- `normal`：默认值，浏览器会显示一个标准的字体
+- `small-caps`：浏览器会显示小型大写字母的字体
+
+### `font-weight`
+- `normal`：默认值，定义标准的字符
+- `bold`：定义粗体字符
+- `bolder`：定义更粗的字符
+- `lighter`：定义更细的字符
+- `100` ~ `900`：定义字符的粗细。400 等同于 normal，而 700 等同于 bold
+
+
+## column
+用于设置元素的多列布局，有以下几种：
+- `column-count`：设置元素的列数
+- `column-gap`：设置元素的列间距
+- `column-rule`：设置元素的列边框 (宽度、样式、颜色)
+- `column-span`：设置元素的列跨度
+- `column-width`：设置元素的列宽度
+ 
+组合元素用法：<code>column: [count] [width];</code>
