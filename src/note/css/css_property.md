@@ -73,6 +73,7 @@
 
 用法：<code>position: [static|relative|absolute|fixed|sticky];</code>
 
+
 ### top、right、bottom、left
 用于设置元素的定位偏移量，有以下几种：
 - `top`：设置元素的上偏移量
@@ -80,7 +81,14 @@
 - `bottom`：设置元素的下偏移量
 - `left`：设置元素的左偏移量
 
-用法：<code>[top|right|bottom|left]: [int];</code>
+用法：<code>[top|right|bottom|left]: [int];</code>  
+简写：`inset = top right bottom left`
+```css
+inset: 10px; /* 应用于所有边 */
+inset: 4px 8px; /* 上下 | 左右 */
+inset: 5px 15px 10px; /* 上 | 左右 | 下 */
+inset: 2.4em 3em 3em 3em; /* 上 | 右 | 下 | 左 */
+```
 
 
 ## transform
@@ -111,6 +119,7 @@
 - `border-image`：设置边框的图片
 
 组合元素用法：<code>border: [width] [style] [color];</code> 
+
 ### `border-style`
 - `none`：默认值，无边框
 - `hidden`：与`none`相同，但在边框绘制区域不裁剪内容
@@ -122,6 +131,44 @@
 - `ridge`：3D凸槽边框，效果取决于边框颜色值
 - `inset`：3D inset边框，效果取决于边框颜色值
 - `outset`：3D outset边框，效果取决于边框颜色值
+
+### `border-radius`
+用于设置元素的边框圆角，有以下几种：
+- `border-top-left-radius`：设置元素的左上角圆角
+- `border-top-right-radius`：设置元素的右上角圆角
+- `border-bottom-right-radius`：设置元素的右下角圆角
+- `border-bottom-left-radius`：设置元素的左下角圆角
+
+组合元素用法：<code>border-radius: [top-left] [top-right] [bottom-right] [bottom-left];</code>
+
+### `border-image`
+用于设置元素的边框图片，有以下几种：
+- `border-image-source`：设置边框图片的路径
+- `border-image-slice`：设置边框图片的裁剪方式
+- `border-image-width`：设置边框图片的宽度
+- `border-image-outset`：设置边框图片的外边距
+- `border-image-repeat`：设置边框图片的重复方式
+
+组合元素用法：<code>border-image: [source] [slice] [width] [outset] [repeat];</code>
+
+#### `border-image-slice`
+- `number`：设置边框图片的裁剪方式为固定值
+- `percentage`：设置边框图片的裁剪方式为百分比
+- `fill`：默认值，设置边框图片的裁剪方式为填充
+
+#### `border-image-repeat`
+- `stretch`：默认值，边框图片会被拉伸以适应边框区域
+- `repeat`：边框图片会被重复以填充边框区域
+- `round`：边框图片会被拉伸或缩小以填充边框区域
+- `space`：边框图片会被重复以填充边框区域，但是第一张图和最后一张图之间不会重复
+
+## box-sizing
+用于设置元素的盒模型，有以下几种：
+- `content-box`：默认值，元素的宽度和高度分别应用到元素的内容框。在宽度和高度之外绘制元素的内边距和边框
+- `border-box`：元素的宽度和高度分别应用到元素的边框盒。在宽度和高度之内绘制元素的内容和内边距
+
+用法：<code>box-sizing: [content-box|border-box];</code>
+
 
 
 ## box-shadow
@@ -153,6 +200,19 @@
 
 组合元素用法：<code>padding: [top] [right] [bottom] [left];</code>  
 缺省参数写法： `padding: [top&bottom] [left&right];`
+
+### padding-inline
+用于设置行内元素的内边距，有以下几种：
+- `padding-inline-start`：设置元素的内联起始内边距
+- `padding-inline-end`：设置元素的内联结束内边距
+
+组合元素用法：<code>padding-inline: [start] [end];</code>
+
+### padding-block
+用于设置块级元素的内边距，有以下几种：
+- `padding-block-start`：设置元素的块起始内边距
+- `padding-block-end`：设置元素的块结束内边距
+
 
 ## background
 用于设置元素的背景，有以下几种：
@@ -204,6 +264,70 @@
 - `lighter`：定义更细的字符
 - `100` ~ `900`：定义字符的粗细。400 等同于 normal，而 700 等同于 bold
 
+## text
+用于设置元素的文本，有以下几种：
+- `text-indent`：设置元素的文本缩进
+- `text-align`：设置元素的文本对齐方式
+- `text-decoration`：设置元素的文本修饰
+- `text-transform`：设置元素的文本转换
+- `text-shadow`：设置元素的文本阴影
+- `white-space`：设置元素的空白处理方式
+- `word-spacing`：设置元素的单词间距
+- `letter-spacing`：设置元素的字母间距
+- `word-break`：设置元素的单词换行方式
+- `word-wrap`：设置元素的单词换行方式
+
+组合元素用法：<code>text: [indent] [align] [decoration] [transform] [shadow];</code>
+
+### `text-align`
+- `left`：默认值，文本左对齐
+- `right`：文本右对齐
+- `center`：文本居中对齐
+- `justify`：文本两端对齐
+
+### `text-decoration`
+- `none`：默认值，定义标准的文本
+- `underline`：定义文本下的一条线
+- `overline`：定义文本上的一条线
+- `line-through`：定义穿过文本下的一条线
+- `blink`：定义闪烁的文本
+
+### `text-transform`
+- `none`：默认值，定义带有小写字母和大写字母的标准的文本
+- `capitalize`：定义只有每个单词的第一个字母带有大写字母的文本
+- `uppercase`：定义仅有大写字母的文本
+- `lowercase`：定义仅有小写字母的文本
+
+### `white-space`
+- `normal`：默认值，空白会被浏览器忽略
+- `pre`：空白会被浏览器保留。其行为方式类似 HTML 中的 `<pre>` 标签
+- `nowrap`：文本不会换行，文本会在在同一行上继续，直到遇到 `<br>` 标签为止
+- `pre-wrap`：保留空白符序列，但是正常地进行换行
+- `pre-line`：合并空白符序列，但是保留换行符
+
+### `word-break`
+- `normal`：默认值，使用浏览器默认的换行规则
+- `break-all`：允许在单词内换行
+- `keep-all`：只能在半角空格或连字符处换行
+
+### `word-wrap`
+- `normal`：默认值，只在允许的断字点换行（浏览器保持默认处理）
+- `break-word`：在长单词或 URL 地址内部进行换行
+
+## overflow
+用于设置元素的溢出处理方式，有以下几种：
+- `overflow-x`：设置元素的水平溢出处理方式
+- `overflow-y`：设置元素的垂直溢出处理方式
+- `overflow`：设置元素的溢出处理方式
+
+组合元素用法：<code>overflow: [x] [y];</code>
+
+### `overflow`取值
+- `visible`：默认值，内容不会被修剪，会呈现在元素框之外
+- `hidden`：内容会被修剪，并且其余内容是不可见的
+- `scroll`：内容会被修剪，但是浏览器会显示滚动条以便查看其余的内容
+- `auto`：如果内容被修剪，则浏览器会显示滚动条以便查看其余的内容
+
 
 ## column
 用于设置元素的多列布局，有以下几种：
@@ -214,3 +338,17 @@
 - `column-width`：设置元素的列宽度
  
 组合元素用法：<code>column: [count] [width];</code>
+
+## white-space
+用于设置元素的空白处理方式，有以下几种：
+
+|	|换行符|空格和制表符|文本换行|行末空格|行末的其他空白分隔符|
+|:----:| :----: | :----: | :----: | :----: | :----: |  
+normal|合并|合并|换行|移除|挂起
+nowrap|合并|合并|不换行|移除|挂起
+pre|保留|保留|不换行|保留|不换行
+pre-wrap|保留|保留|换行|挂起|挂起
+pre-line|保留|合并|换行|移除|挂起
+break-spaces|保留|保留|换行|换行|换行
+
+用法：<code>white-space: [normal|nowrap|pre|pre-wrap|pre-line|break-spaces];</code>
