@@ -1,5 +1,27 @@
 # Python3
 
+## 基本数据类型
+不可变数据（3 个）：`Number`（数字）、`String`（字符串）、`Tuple`（元组）  
+可变数据（3 个）：`List`（列表）、`Dictionary`（字典）、`Set`（集合）。  
+不可变数据数据的值不可变，但可重新赋值，而可变数据的值可变。
+
+
+数字：`int`、`float`、`bool`、`complex`（复数）
+
+List（列表）：`list = [value1, value2, value3, ...]` (相当于数组，可用下标访问和修改)
+
+Tuple（元组）：`tuple = (value1, value2, value3, ...)` (相当于只读数组，不可修改)
+
+Set（集合）：`set = {value1, value2, value3, ...}` (不可重复，可进行集合的运算，如交集、并集、差集等)
+```python
+print(a - b)     # a 和 b 的差集
+print(a | b)     # a 和 b 的并集
+print(a & b)     # a 和 b 的交集
+print(a ^ b)     # a 和 b 中不同时存在的元素
+```
+
+Dictionary（字典）：`dict = {key1: value1, key2: value2, key3: value3, ...}` (相当于js中的对象，可用键访问和修改)
+
 ## 常用函数
 ```python
 print() # 打印输出
@@ -59,3 +81,45 @@ ab+|以二进制格式打开一个文件用于追加。如果该文件已存在�
 覆盖|||+|+||
 指针在开始|+|+|+|+||
 指针在结尾|||||+|+
+
+### f.read()
+```python
+f = open('file.txt', 'r')
+f.read() # 读取整个文件
+f.read(4) # 读取4个字符
+f.readline() # 读取一行
+f.readlines() # 读取所有行
+f.close() # 关闭文件
+```
+
+### f.write()
+```python
+f = open('file.txt', 'w')
+f.write('Hello World!') # 写入字符串
+f.close() # 关闭文件
+```
+
+### f.tell()
+```python
+f = open('file.txt', 'r')
+f.tell() # 返回文件对象当前所处的位置, 它是从文件开头开始算起的字节数
+f.close() # 关闭文件
+```
+
+### f.seek()
+如果要改变文件指针当前的位置, 可以使用`f.seek(offset, from_what)`函数。
+
+`from_what`的值, 如果是 0 表示开头, 如果是 1 表示当前位置, 2 表示文件的结尾
+```python
+f = open('file.txt', 'r')
+f.seek(5) # 移动文件指针到指定位置
+f.seek(5, 0) # 移动到文件的第六个字节
+f.seek(-3, 2) # 移动到文件的倒数第三字节
+f.close() # 关闭文件
+```
+
+### f.close()
+```python
+f = open('file.txt', 'r')
+f.close() # 关闭文件
+```
