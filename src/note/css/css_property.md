@@ -352,3 +352,30 @@ pre-line|保留|合并|换行|移除|挂起
 break-spaces|保留|保留|换行|换行|换行
 
 用法：<code>white-space: [normal|nowrap|pre|pre-wrap|pre-line|break-spaces];</code>
+
+## column-gap
+用于设置元素的列间距，值为`<length>`或`<percentage>`，默认值为`1em`。
+
+## column-rule
+用于设置元素的列边框，有以下几种：
+- `column-rule-width`：设置元素的列边框宽度
+- `column-rule-style`：设置元素的列边框样式
+- `column-rule-color`：设置元素的列边框颜色
+
+组合元素用法：<code>column-rule: [width] [style] [color];</code>
+
+## column-span
+用于设置元素的列跨度，有以下几种：
+- `none`：默认值，元素不跨列
+- `all`：元素跨所有列
+
+## column-width
+用于设置元素的列宽度，值为`<length>`或`<percentage>`，默认值为`auto`。
+
+## column-fill
+用于设置元素的列填充方式，有以下几种：
+- `balance`：默认值，列高度会尽可能地平衡
+- `auto`：列高度会尽可能地平衡，但是会根据内容进行调整
+
+## row-gap
+用于设置元素的行间距，值为`<length>`或`<percentage>`，默认值为`normal`。
