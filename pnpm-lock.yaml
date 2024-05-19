@@ -13,6 +13,9 @@ devDependencies:
   '@vuepress/client':
     specifier: 2.0.0-beta.67
     version: 2.0.0-beta.67
+  katex:
+    specifier: ^0.16.10
+    version: 0.16.10
   vue:
     specifier: ^3.3.4
     version: 3.3.7
@@ -21,7 +24,7 @@ devDependencies:
     version: 2.0.0-beta.67(@vuepress/client@2.0.0-beta.67)(vue@3.3.7)
   vuepress-theme-hope:
     specifier: ^2.0.0-beta.244
-    version: 2.0.0-beta.244(vuepress@2.0.0-beta.67)
+    version: 2.0.0-beta.244(katex@0.16.10)(vuepress@2.0.0-beta.67)
 
 packages:
 
@@ -1622,7 +1625,7 @@ packages:
       upath: 2.0.1
     dev: true
 
-  /@mdit/plugin-katex@0.5.2(markdown-it@13.0.2):
+  /@mdit/plugin-katex@0.5.2(katex@0.16.10)(markdown-it@13.0.2):
     resolution: {integrity: sha512-SkDGwBsNosOK0B734vYBaSEbvfB5kdok9nIJskKvU9Fm2WldnQ2mh7RYeodxyB6FQDR62xt1x1qntYtHQyiZHg==}
     engines: {node: '>= 18'}
     peerDependencies:
@@ -1637,6 +1640,7 @@ packages:
       '@mdit/plugin-tex': 0.5.2(markdown-it@13.0.2)
       '@types/katex': 0.16.5
       '@types/markdown-it': 13.0.5
+      katex: 0.16.10
       markdown-it: 13.0.2
     dev: true
 
@@ -2715,6 +2719,11 @@ packages:
     resolution: {integrity: sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==}
     dev: true
 
+  /commander@8.3.0:
+    resolution: {integrity: sha512-OkTL9umf+He2DZkUq8f8J9of7yL6RJKI24dVITBmNfZBmri9zYZQrKkuXiKhyfPSu8tUhnVBB1iKXevvnlR4Ww==}
+    engines: {node: '>= 12'}
+    dev: true
+
   /common-tags@1.8.2:
     resolution: {integrity: sha512-gk/Z852D2Wtb//0I+kRFNKKE9dIIVirjoqPoA1wJU+XePVXZfGeBpk45+A1rKO4Q43prqWBNY/MiIeRLbPWUaA==}
     engines: {node: '>=4.0.0'}
@@ -3601,6 +3610,13 @@ packages:
   /jsonpointer@5.0.1:
     resolution: {integrity: sha512-p/nXbhSEcu3pZRdkW1OfJhpsVtW1gd4Wa1fnQc9YLiTfAjn0312eMKimbdIQzuZl9aa9xUGaRlP9T/CJE/ditQ==}
     engines: {node: '>=0.10.0'}
+    dev: true
+
+  /katex@0.16.10:
+    resolution: {integrity: sha512-ZiqaC04tp2O5utMsl2TEZTXxa6WSC4yo0fv5ML++D3QZv/vx2Mct0mTlRx3O+uUkjfuAgOkzsCmq5MiUEsDDdA==}
+    hasBin: true
+    dependencies:
+      commander: 8.3.0
     dev: true
 
   /kind-of@6.0.3:
@@ -4961,7 +4977,7 @@ packages:
       - typescript
     dev: true
 
-  /vuepress-plugin-md-enhance@2.0.0-beta.244(vuepress@2.0.0-beta.67):
+  /vuepress-plugin-md-enhance@2.0.0-beta.244(katex@0.16.10)(vuepress@2.0.0-beta.67):
     resolution: {integrity: sha512-RxHiUxCU9jLp/gZvbmC7TMpmql5HENCVhzELTzUKO9yRtPMIG/z6yFBVv6MPjKxUoJPNChWo0R+S1UKGks0BYQ==}
     engines: {node: '>=18.16.0', npm: '>=8', pnpm: '>=7'}
     peerDependencies:
@@ -5016,7 +5032,7 @@ packages:
       '@mdit/plugin-img-mark': 0.5.2(markdown-it@13.0.2)
       '@mdit/plugin-img-size': 0.5.2(markdown-it@13.0.2)
       '@mdit/plugin-include': 0.5.2(markdown-it@13.0.2)
-      '@mdit/plugin-katex': 0.5.2(markdown-it@13.0.2)
+      '@mdit/plugin-katex': 0.5.2(katex@0.16.10)(markdown-it@13.0.2)
       '@mdit/plugin-mark': 0.5.2(markdown-it@13.0.2)
       '@mdit/plugin-mathjax': 0.5.2(markdown-it@13.0.2)
       '@mdit/plugin-stylize': 0.5.2(markdown-it@13.0.2)
@@ -5034,6 +5050,7 @@ packages:
       '@vueuse/core': 10.5.0(vue@3.3.7)
       balloon-css: 1.2.0
       js-yaml: 4.1.0
+      katex: 0.16.10
       markdown-it: 13.0.2
       vue: 3.3.7
       vue-router: 4.2.5(vue@3.3.7)
@@ -5285,7 +5302,7 @@ packages:
       - typescript
     dev: true
 
-  /vuepress-theme-hope@2.0.0-beta.244(vuepress@2.0.0-beta.67):
+  /vuepress-theme-hope@2.0.0-beta.244(katex@0.16.10)(vuepress@2.0.0-beta.67):
     resolution: {integrity: sha512-ppGuxRAY78LNfta9VOGqmGF4lCWJAaBqF/owruDXbp1CWR/3osgfl4qf1Bdo/0FeLxdsZlMHjS3VNQ4LLZ7gNQ==}
     engines: {node: '>=18.16.0', npm: '>=8', pnpm: '>=7'}
     peerDependencies:
@@ -5331,7 +5348,7 @@ packages:
       vuepress-plugin-copy-code2: 2.0.0-beta.244(vuepress@2.0.0-beta.67)
       vuepress-plugin-copyright2: 2.0.0-beta.244(vuepress@2.0.0-beta.67)
       vuepress-plugin-feed2: 2.0.0-beta.244(vuepress@2.0.0-beta.67)
-      vuepress-plugin-md-enhance: 2.0.0-beta.244(vuepress@2.0.0-beta.67)
+      vuepress-plugin-md-enhance: 2.0.0-beta.244(katex@0.16.10)(vuepress@2.0.0-beta.67)
       vuepress-plugin-photo-swipe: 2.0.0-beta.244(vuepress@2.0.0-beta.67)
       vuepress-plugin-pwa2: 2.0.0-beta.244(vuepress@2.0.0-beta.67)
       vuepress-plugin-reading-time2: 2.0.0-beta.244(vuepress@2.0.0-beta.67)

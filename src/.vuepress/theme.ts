@@ -54,6 +54,7 @@ export default hopeTheme({
       align: true,
       attrs: true,
       card: true,
+      katex: true,
 
       // install chart.js before enabling it
       // chart: true,
